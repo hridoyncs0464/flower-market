@@ -246,7 +246,7 @@ font-size: 1.375rem;
 
 /* join section */
 .join{
-            background-image:url("./assets/news-letter-bg.png") ;   
+            background-image:url("../assets/news-letter-bg.png") ;   
             width: 100%;
             height: 100vh;
             background-size: cover;
