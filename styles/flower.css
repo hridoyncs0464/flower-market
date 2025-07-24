@@ -52,14 +52,89 @@
 
 /* navbar */
 
-.nav-items {
+.navbar {
      display: flex;
-     list-style: none;
+     align-items: center;
+     justify-content: space-between;
+     background: transparent;
+     padding: 24px 60px 0 60px;
+     box-sizing: border-box;
+
+}
+.nav-items-bar {
+    display: flex;
+    align-items: center;
+}
+.navbar-logo{
+    height: 70px;
+    width: auto;
+
+
+}
+/* .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+} */
+.nav-items{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+    /* margin-left: auto; */
+}
+
+.cart-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
 }
 
+.cart-wrapper .cart-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+       font-weight: bold;  
+        stroke-width: 3px;
+         color: #181A20;     
+}
+.cart-wrapper .cart-text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-items li{
+    color: #8987A1;
+    font-size:18px ;
+    font-weight: 500;
 
-/* banner */
+
+}
+.nav-items li.active {
+    color:#252432;
+    font-weight: bold;
+
+}
+.nav-items li:hover{
+    color: #181A20; 
+}
+.cart-icon{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+}
+
+.cart-text{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* banner 252432 */
 
 
 .banner{
