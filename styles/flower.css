@@ -9,7 +9,7 @@
     "wdth" 100;
 }
 
-/* font for descroptions */
+/* font for descriptions */
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -138,16 +138,15 @@
 
 /* responsive for mobile navbar section */
 @media screen and  (max-width: 576px )  {
+    .active,.shop{
+        display: none;
+    }
 
 
-
-    
-    
 }
 
 
 /* banner 252432 */
-
 
 .banner{
     display:flex ;
@@ -175,16 +174,10 @@
 
 /* responsive for mobile banner section */
 @media screen and  (max-width: 576px )  {
-
 .banner{
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;  
 }
-
-    
-    
 }
-
 
 
 /* plants */
@@ -252,19 +245,14 @@
     justify-content: center;
     text-align: center;
   }
-
-    
-    
 }
-
-
 
 /* plants lover section */
 .Plants{
-    margin: 0 auto;
+    /* margin: 0 auto;
     padding: 20px;
      margin-top: 60px;
-     margin-bottom: 60px;
+     margin-bottom: 60px; */
      
 }
 
@@ -438,7 +426,9 @@ font-size: 1.375rem;
 
 /*  responsive for the  latest deals section */
 @media screen and (max-width:576px) {
-
+.deals-img-container,.deals-img-left{
+    flex-direction: column;
+}
     
 }
 
@@ -483,8 +473,18 @@ font-size: 1.375rem;
     /* padding: 22px 540px 16px 1px; */
     font-size: 1rem;
     outline: none;
-    
 
+}
+
+
+@media screen and (max-width:576px){
+    .join{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .join-input{
+    padding: 20px 80px  20px 20px ;
+}
 }
 
 
