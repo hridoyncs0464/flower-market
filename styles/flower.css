@@ -19,7 +19,10 @@
 
 
 /* shared css */
-
+.cmn-margin{
+    max-width: 1140px;
+    margin: 120px auto;
+}
 
 .cmn-orange{
    
@@ -133,6 +136,15 @@
     font-weight: 500;
 }
 
+/* responsive for mobile navbar section */
+@media screen and  (max-width: 576px )  {
+
+
+
+    
+    
+}
+
 
 /* banner 252432 */
 
@@ -161,11 +173,24 @@
     margin: 0;
 }
 
+/* responsive for mobile banner section */
+@media screen and  (max-width: 576px )  {
+
+.banner{
+    flex-direction: column-reverse;
+    
+}
+
+    
+    
+}
+
+
 
 /* plants */
 .our-Plants{
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
      margin-bottom: 60px;
 }
 .plant-content{
@@ -182,19 +207,24 @@
 .plant-card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    row-gap: 25px;
-    column-gap: 0.25px;
+    gap: 30px 20px;
+    /*  row-gap: 25px;
+    column-gap: 0.25px; */
     /* gap: 5px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+}
+.plant-card{
+   text-align: center;
 
 }
 .plant-img-title{
+     
     font-size: 1.375rem;
     font-weight: 200;
     color: #111111;
-    padding: 0;
-    margin: 0 auto;
-    gap: 5px;
+     padding: 0;
+   
 
 }
 .plant-price{
@@ -203,6 +233,30 @@
     color: #111111;
 
 }
+/* responsive for mobile plant-img container section */
+@media screen and  (max-width: 576px )  {
+ .plant-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    margin: 0 ;
+    padding: 0 ;
+    width: 100vw; 
+    box-sizing: border-box;
+  }
+
+  .plant-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+    
+    
+}
+
 
 
 /* plants lover section */
@@ -211,29 +265,26 @@
     padding: 20px;
      margin-top: 60px;
      margin-bottom: 60px;
+     
 }
 
 .plants-lover{
     display: flex;
     justify-content: space-evenly;
-    align-items: center ;
+    gap: 60px;
     
 }
 .plants-lover-container{
     position: relative;
-    text-align: center;
+    margin: 40px 0;
 }
  .trusted-logo-wrapper{
     position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-   height: 100px;
+    top: -25%;
+    left: -40%;
 } 
  .trusted-logo {
-  width: 100%;
-  height: auto;
+  width: 32%;
 } 
 .plants-lover-title{
     font-size: 3.125rem;
@@ -243,10 +294,20 @@
 font-size: 1.375rem;
 
 }
+
+/*  responsive for the plant-lover section */
+
+@media screen and (max-width:576px) {
+    .plants-lover{
+        flex-direction: column;
+    }
+    
+}
 /* latest deals  section */
 
 .deals-container{
      text-align: center;
+     margin-top: 50px;
 }
 .deals-title{
     font-size: 3.125rem;
@@ -366,23 +427,31 @@ font-size: 1.375rem;
 
 }
 
+.deal-btn:hover {
+  background: #fff;
+  color: #E95A08;
+}
+.deal-btn-small:hover {
+  background: #fff;
+  color: #E95A08;
+}
+
+/*  responsive for the  latest deals section */
+@media screen and (max-width:576px) {
+
+    
+}
+
 
 /* join section */
 .join{
             background-image:url("../assets/news-letter-bg.png") ;   
-            width: 100%;
-            height: 100vh;
+            /* width: 100%;
+            height: 100vh; */
             background-size: cover;
-            background-position: center;
-            display: flex;
-         
-            align-items: center;
-           
-             text-align: center;
-             gap: 120px;
-             margin: 0 auto ;      
+            background-position: center;     
               margin-top: 60px;    
-           /* padding: 50px 30px 19px 30px; */
+           padding: 200px 400px;
             
 }
 .join-content{
@@ -403,13 +472,14 @@ font-size: 1.375rem;
     margin: 0;
 
 }
-.join-wrapper{
+.form-wrapper{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .join-input{
     border: none;
-    padding: 16px 500px  15px 10px  ;
+    padding: 20px 500px  20px 20px  ;
     /* padding: 22px 540px 16px 1px; */
     font-size: 1rem;
     outline: none;
@@ -420,113 +490,30 @@ font-size: 1.375rem;
 
 /*  footer  */
 
-
+.footer-margin{
+    max-width: 1140px;
+    margin: 50px auto;
+}
 .footer-section {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0;
-  position: relative;
-}
-
-.footer-content-row {
-  display: flex;
-  align-items: flex-start; 
-  justify-content: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 0 30px 0;
-  width: 100%;
-}
-.footer-branding{
-    /* column-rule: rgba(0, 0, 0, 0.5); */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 320px;
-    margin-right: 40px;
-}
-.footer-branding img{
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
-
+  background-color: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 100px;;
+ 
 }
 .footer-description {
   color: #6b6c80;
   font-size: 20px;
   margin: 0;
 }
-
-/*  footer- link-container */
-.footer-links-container{
-    display: flex;
-    gap: 80px;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 2rem;
+.footer-links-container ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 25px;
+    column-gap: 100px;
 }
-
-.company-links ul,
-.resouses ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.company-links li,
-.resouses li {
-  margin-bottom: 18px;
-  color: #6b6c80;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  cursor: pointer;
-  transition: color 0.2s;
-  text-align: left;
-}
-
-.company-links li:last-child,
-.resouses li:last-child {
-  margin-bottom: 0;
-}
-
-.company-links li:hover,
-.resouses li:hover {
-  color: #ff7a00;
-}
-.footer-links-container li{
+.footer-links-container ul{
     list-style: none;
-
+    color: #;
 }
 
-
-/* foter social icons */
-
-
-.footer-social{
-    position: absolute;
-    top: 40px;   
-    right: 0;
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    margin-left: 0;
-}
-.footer-social a{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    overflow: hidden;
-    background: none;
-}
-
-.footer-social a img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 50%;
-
-}
