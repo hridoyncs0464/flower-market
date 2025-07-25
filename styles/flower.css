@@ -248,13 +248,13 @@
 }
 
 /* plants lover section */
-.Plants{
+/* .Plants{
     /* margin: 0 auto;
     padding: 20px;
      margin-top: 60px;
      margin-bottom: 60px; */
-     
-}
+/*      
+} */ 
 
 .plants-lover{
     display: flex;
@@ -436,8 +436,7 @@ font-size: 1.375rem;
 /* join section */
 .join{
             background-image:url("../assets/news-letter-bg.png") ;   
-            /* width: 100%;
-            height: 100vh; */
+          
             background-size: cover;
             background-position: center;     
               margin-top: 60px;    
@@ -445,7 +444,6 @@ font-size: 1.375rem;
             
 }
 .join-content{
-    /* justify-content: space-around; */
    display: flex;
       flex-direction: column;
         align-items: center;
@@ -470,7 +468,6 @@ font-size: 1.375rem;
 .join-input{
     border: none;
     padding: 20px 500px  20px 20px  ;
-    /* padding: 22px 540px 16px 1px; */
     font-size: 1rem;
     outline: none;
 
@@ -479,8 +476,7 @@ font-size: 1.375rem;
 
 @media screen and (max-width:576px){
     .join{
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover;
     }
     .join-input{
     padding: 20px 80px  20px 20px ;
@@ -492,13 +488,14 @@ font-size: 1.375rem;
 
 .footer-margin{
     max-width: 1140px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .footer-section {
   background-color: rgba(255, 255, 255, 0.5);
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 100px;;
+  gap: 100px;
+  padding: 50px;
  
 }
 .footer-description {
@@ -514,6 +511,18 @@ font-size: 1.375rem;
 }
 .footer-links-container ul{
     list-style: none;
-    color: #;
+    color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width:576px){
+    .footer-section {
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+ 
+}
+.footer-links-container ul{
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+}
